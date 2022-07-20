@@ -4,7 +4,8 @@ const request = require("request");
 const app = express();
 const https = require("https");
 app.use(bodyParser.urlencoded({extended:true}));
-app.listen(process.env.PORT||3000,function(){
+const PORT = process.env.PORT || '8080';
+app.listen(PORT,function(){
     console.log("Server is set-up.");
 });
 
