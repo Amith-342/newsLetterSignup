@@ -6,7 +6,7 @@ const https = require("https");
 app.use(bodyParser.urlencoded({extended:true}));
 const PORT = process.env.PORT || '8080';
 app.listen(PORT,function(){
-    console.log("Server is set-up.");
+    console.log("Server is set-up in 8080.");
 });
 
 app.get("/",function(req,res){
